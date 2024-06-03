@@ -1,0 +1,74 @@
+{
+  "name": "image-kit",
+  "version": "0.1.0",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./webpack-plugin": {
+      "types": "./dist/webpack/plugin.d.ts",
+      "default": "./dist/webpack/plugin.js"
+    }
+  },
+  "scripts": {
+    "prepare": "modern build",
+    "dev": "modern dev",
+    "build": "modern build",
+    "build:watch": "modern build -w",
+    "new": "modern new",
+    "upgrade": "modern upgrade"
+  },
+  "devDependencies": {
+    "@modern-js/eslint-config": "2.50.0",
+    "@modern-js/module-tools": "2.50.0",
+    "@types/express": "~4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "~16.11.7",
+    "@types/react": "~18.0.26",
+    "@types/react-dom": "~18.0.10",
+    "husky": "~8.0.1",
+    "lint-staged": "~13.1.0",
+    "prettier": "~2.8.1",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "rimraf": "~3.0.2",
+    "tailwindcss": "~3.3.3",
+    "typescript": "~5.0.4",
+    "webpack": "^5.91.0"
+  },
+  "sideEffects": [],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@arco-design/web-react": "^2.62.1",
+    "@modern-js/plugin-tailwindcss": "2.50.0",
+    "@modern-js/utils": "^2.50.0",
+    "@rsbuild/core": "^0.7.0",
+    "@rsbuild/plugin-less": "^0.7.0",
+    "@rsbuild/plugin-react": "^0.7.0",
+    "@types/sharp": "^0.32.0",
+    "axios": "^1.7.2",
+    "cropperjs": "2.0.0-rc",
+    "express": "~4.19.2",
+    "image-editor-core": "^1.0.5",
+    "multer": "1.4.5-lts.1",
+    "sharp": "^0.33.4",
+    "tailwindcss": "^3.4.3"
+  },
+  "peerDependencies": {
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "tailwindcss": "~3.3.3",
+    "webpack": "^5.91.0"
+  },
+  "peerDependenciesMeta": {
+    "webpack": {
+      "optional": true
+    }
+  }
+}

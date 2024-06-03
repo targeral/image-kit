@@ -1,0 +1,25 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@shared/*": ["./shared/*"],
+      "@api/*": ["./api/lambda/*"]
+    },
+    "moduleResolution": "Node16",
+    "module": "node16"
+  },
+  "include": [
+    ".image-kit/index.d.ts",
+    ".image-kit/image.d.ts",
+    "src",
+    "shared",
+    "config",
+    "modern.config.ts",
+    "api"
+  ],
+  "exclude": ["**/node_modules"]
+}
